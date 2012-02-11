@@ -19,6 +19,7 @@
       for (i = 0; i < imgs.length; i++) {
         var rand = Math.floor(Math.random() * urls.length);
         imgs[i].src = urls[rand]
+        imgs[i].width = imgs[i].width;
       }
   };
 
