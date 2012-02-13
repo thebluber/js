@@ -32,4 +32,4 @@ var replace = function(urls) {
 }
 
 var max = document.getElementsByTagName("img").length
-window.onload = getUrls(key, [], max);
+window.onload = getUrls(key, [], 20);
