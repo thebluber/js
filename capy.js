@@ -25,9 +25,8 @@ var getUrls = function(key, acc, max) {
 
 var replace = function(urls) {
     var imgs = document.getElementsByTagName("img");
-    for(i = 0; i < imgs.length; i++){
-        var rand = Math.floor(Math.random() * urls.length);
-        imgs[i].src = urls[rand];
+    for(var i = 0; i < imgs.length; i++){
+        imgs[i].src = urls[i % 30];
         imgs[i].width = imgs[i].width;
     }
 }
