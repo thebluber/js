@@ -28,5 +28,5 @@
     return "&start=" + rand;
   };
 key = prompt("insert keyword:");
-url = "https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=" + key + setStart() + "&rsz=8";
+url = "https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=" + key + setStart() + "&rsz=8" + "&save=off";
 window.onload = doJsonP(url, "getUrls");

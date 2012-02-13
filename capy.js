@@ -13,7 +13,7 @@ var getUrls = function(key, acc, max) {
       return replace(acc)
     };
     var rand = Math.floor(Math.random() * 61);
-    var url = "https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=" + key + "&start=" + rand;
+    var url = "https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=" + key + "&start=" + rand + "&save=off";
     var a = [];
     doJsonP(url, function(json){
         var res = json.responseData.results;
