@@ -1,4 +1,5 @@
-key = prompt("insert your keyword:");
+key = prompt("insert a keyword for example 'dinosaur'");
+
 
 var doJsonP = function(url, callback) {
      call = callback;
