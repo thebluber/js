@@ -1,7 +1,7 @@
 require "sinatra"
 
 get "/" do
- redirect "/test.html" 
+ redirect "/index.html" 
 end
 
 get "/favicon.ico" do
